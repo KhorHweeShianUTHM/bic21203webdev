@@ -1,5 +1,3 @@
-0. open XAMPP apache and mySQL, insert lab5b_db to your phpMyAdmin database first.
-1. Register form 
-2. Login form 
-3. Display form
+0. open XAMPP apache and mySQL, insert lab5b_db.sql to your phpMyAdmin database first.
+1. order of website -> register_form.php -> login_form.php -> display_form.php
 
