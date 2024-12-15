@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 15, 2024 at 11:38 AM
+-- Generation Time: Dec 15, 2024 at 12:04 PM
 -- Server version: 10.6.7-MariaDB
 -- PHP Version: 8.2.12
 
@@ -20,6 +20,20 @@ SET time_zone = "+00:00";
 --
 -- Database: `register`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `new_record`
+--
+
+CREATE TABLE `new_record` (
+  `id` int(11) NOT NULL,
+  `trn_date` datetime NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `age` int(11) NOT NULL,
+  `submittedby` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -47,6 +61,12 @@ INSERT INTO `users` (`id`, `username`, `email`, `password`, `trn_date`) VALUES
 --
 
 --
+-- Indexes for table `new_record`
+--
+ALTER TABLE `new_record`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -55,6 +75,12 @@ ALTER TABLE `users`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `new_record`
+--
+ALTER TABLE `new_record`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `users`
