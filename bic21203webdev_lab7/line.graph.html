@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Line Graph</title>
+</head>
+<body>
+    <h1>Expenditure by Domestic Tourist - Line Graph</h1>
+    <label>Swap Button: </label>
+    <button onclick="swapYear(2010)">2010</button>
+    <button onclick="swapYear(2011)">2011</button>
+    <br><br>
+    <img id="line_graph" src="line_graph.php?year=2010" alt="Line Graph">
+
+    <script>
+        function swapYear(year) {
+            document.getElementById('line_graph').src = 'line_graph.php?year=' + year;
+        }
+    </script>
+</body>
+</html>

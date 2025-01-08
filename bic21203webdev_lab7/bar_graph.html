@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar Graph</title>
+</head>
+<body>
+    <h1>Expenditure by Domestic Visitors - Bar Graph</h1>
+    <label>Swap Button: </label>
+    <button onclick="swapYear(2010)">2010</button>
+    <button onclick="swapYear(2011)">2011</button>
+    <br><br>
+    <img id="bar_graph" src="bar_graph.php?year=2010" alt="Bar Graph">
+    
+    <script>
+        function swapYear(year) {
+            document.getElementById('bar_graph').src = 'bar_graph.php?year=' + year;
+        }
+    </script>
+</body>
+</html>
