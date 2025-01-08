@@ -5,7 +5,7 @@ header("Content-Type: image/png");
 $host = 'localhost';
 $user = 'root';
 $password = '';
-$dbname = 'lab7_graph';
+$dbname = 'graph';
 
 $conn = new mysqli($host, $user, $password, $dbname);
 if ($conn->connect_error) {
